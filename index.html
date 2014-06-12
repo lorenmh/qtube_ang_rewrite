@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+.player-button {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.player-button.play {
+  background-image:url('play.png');
+  background-color: green;
+}
+
+.player-button.pause {
+  background-image:url('pause.png');
+  background-color:black;
+}
+</style>
+  <!--scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  
+  <script src="js/angular.min.js"></script>
+  
+  <script src="js/module/sortable.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-app="qTube" ng-controller="AppController">
+  <div>
+    <qt-player></qt-player>
+    <qt-player-buttons></qt-player-buttons>
+    <qt-queue></qt-queue>
+  </div>
+</body>
+
+</html>
